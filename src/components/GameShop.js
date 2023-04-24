@@ -1,11 +1,11 @@
 import React from "react";
 
-const MyGames = () => {
-  return (
-    <>
-      <h1>Hello Mygames</h1>
-    </>
-  );
-};
-
-export default MyGames;
+function GameShop() {
+    return (
+      <div>
+        <h1>My Games</h1>
+      </div>
+    );
+  }
+  
+  export default GameShop;

@@ -1,11 +1,11 @@
 import React from "react";
 
-const GameDetails = () => {
+function GameDetails() {
   return (
-    <>
-      <h1>Hello Gamedetails</h1>
-    </>
+    <div>
+      <h1>Favorites</h1>
+    </div>
   );
-};
+}
 
 export default GameDetails;
