@@ -4,9 +4,9 @@ const GameCard = ({ game })=> {
     return (
 <div>
 <article>
-<img src={game.Poster} alt={game.Title} />
-<h3>{game.Title}</h3>
-<p className='CardType'>Type: {game.Type}</p>
+<img src={game.background_image} alt={game.name} />
+<h3>{game.name}</h3>
+<p>{game.genres.map(genre => genre.name).join(', ')}</p>
 </article>
 </div>
   );
