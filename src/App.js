@@ -16,7 +16,17 @@ export default function App() {
       <Route path="my-games" element={<MyGames />} />
       <Route path="favorites" element={<Favorites />} />
     </Routes>
-    </>
+    
+
+    
+    <main>
+      <p>hello</p>
+    </main>
+      
+      
+    
+    </>  
+
   );
 
 }

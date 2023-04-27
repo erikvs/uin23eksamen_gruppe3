@@ -2,7 +2,7 @@ nav{
   
   ul {
     list-style-type: none;
-    margin: 0;
+    margin: 0 5rem 2rem 5rem;
     padding: 1rem;
     overflow: hidden;
     background-color: #333;
@@ -42,6 +42,7 @@ body{
     background: rgb(74,74,102);
     background: linear-gradient(90deg, rgba(74,74,102,1) 26%, rgba(33,76,84,1) 57%, rgba(68,68,68,1) 96%); 
     color: #fff;
+    
 
     h1{
       margin-left: 50px;
