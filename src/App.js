@@ -5,6 +5,7 @@ import MyGames from './components/MyGames';
 import Favorites from './components/Favorites';
 import Nav from './components/Nav';
 import GameDetails from './components/GameDetails';
+import './styles/App.css';
 
 export default function App() {
 
@@ -17,7 +18,17 @@ export default function App() {
       <Route path="favorites" element={<Favorites />} />
       <Route path="game/:slug" element={<GameDetails />} />
     </Routes>
-    </>
+    
+
+    
+    <main>
+      <p>hello</p>
+    </main>
+      
+      
+    
+    </>  
+
   );
 
 }

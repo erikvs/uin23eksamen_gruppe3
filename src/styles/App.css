@@ -1,0 +1,43 @@
+nav ul {
+  list-style-type: none;
+  margin: 0 5rem 2rem 5rem;
+  padding: 1rem;
+  overflow: hidden;
+  background-color: #333;
+}
+nav ul li {
+  float: right;
+}
+nav ul li a {
+  background-color: #333;
+  border: none;
+  color: #fff;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.2s;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  background-color: #333;
+  color: #fff;
+  font-weight: bolder;
+  border: #333 solid 10px;
+  font-size: large;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(74, 74, 102);
+  background: linear-gradient(90deg, rgb(74, 74, 102) 26%, rgb(33, 76, 84) 57%, rgb(68, 68, 68) 96%);
+  color: #fff;
+}
+body h1 {
+  margin-left: 50px;
+  font-size: 3rem;
+}
+body p {
+  margin-left: 60px;
+}/*# sourceMappingURL=App.css.map */
