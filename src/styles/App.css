@@ -41,7 +41,7 @@ body h1 {
 
 .FrontpageMygames {
   display: grid;
-  grid-template-columns: 20% 60% 20%;
+  grid-template-columns: 10% 80% 10%;
   padding: 10px;
 }
 .FrontpageMygames h1 {
@@ -82,20 +82,22 @@ body h1 {
   max-width: 100%;
   max-height: 168px;
 }
-.FrontpageMygames .MygamesGames button {
+.FrontpageMygames .MygamesGames a {
+  text-decoration: none;
+}
+.FrontpageMygames .MygamesGames a button {
   background-color: #333;
-  border: none;
   color: #fff;
   padding: 16px 32px;
-  text-align: center;
   font-size: 16px;
   margin: 4px 2px;
   transition: 0.5s;
   font-weight: bold;
   border-radius: 15px;
-  float: right;
+  display: flex;
+  justify-content: end;
 }
-.FrontpageMygames .MygamesGames button:hover {
+.FrontpageMygames .MygamesGames a button:hover {
   background-color: #fff;
   color: #333;
   font-size: 17px;
