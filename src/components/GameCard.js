@@ -1,10 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const GameCard = ({ game })=> {
+function GameCard ({ game }) {
     return (
 <div>
 <article>
+<Link to={`/game/${game.slug}`}>
 <img src={game.background_image} alt={game.name} />
+</Link>
 <h3>{game.name}</h3>
 <p>{game.genres.map(genre => genre.name).join(', ')}</p>
 </article>
