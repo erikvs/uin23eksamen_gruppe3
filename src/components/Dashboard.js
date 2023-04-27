@@ -28,3 +28,6 @@ function Dashboard() {
 }
 
 export default Dashboard;
+
+
+//TODO: This project made possible by using https://rawg.io/apidocs - attribution-link to API
