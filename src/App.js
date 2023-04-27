@@ -21,9 +21,7 @@ export default function App() {
     
 
     
-    <main>
-      <p>hello</p>
-    </main>
+    
       
       
     

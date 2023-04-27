@@ -14,10 +14,10 @@ function Dashboard() {
   }, []);
 
   return (
-    <div>
+    <div className='FrontpageMygames'>
       <h1>Dashboard</h1>
       <p>Welcome to the dashboard!</p>
-      <section>
+      <section className='MygamesGames'>
         <h2>My Games-Library</h2>
       {games.map(game => <GameCard key={game.id} game={game} />)}
       <Link to="/my-games"><button>Go to My Games</button></Link>
