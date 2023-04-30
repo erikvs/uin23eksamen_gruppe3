@@ -82,6 +82,11 @@ body h1 {
   max-width: 100%;
   max-height: 168px;
 }
+.FrontpageMygames .MygamesGames article img img:hover {
+  height: 120%;
+  width: 120%;
+  transition: 0.5s;
+}
 .FrontpageMygames .MygamesGames a {
   text-decoration: none;
 }
@@ -101,4 +106,48 @@ body h1 {
   background-color: #fff;
   color: #333;
   font-size: 17px;
+}
+
+.GameInfo {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  padding: 10px;
+}
+.GameInfo h1 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+.GameInfo p {
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+.GameInfo .MygamesGames {
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+.GameInfo .MygamesGames div {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 20px;
+}
+.GameInfo .MygamesGames article {
+  color: #fff;
+  background-color: #222;
+  border: solid 3px #222;
+  width: -moz-fit-content;
+  width: fit-content;
+  justify-content: center;
+  list-style: none;
+  text-align: center;
+  margin: auto;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  inline-size: 300px;
+  overflow-wrap: break-word;
+  height: 250px;
+  border-radius: 15px;
+}
+.GameInfo .MygamesGames article img {
+  max-width: 100%;
+  max-height: 168px;
 }/*# sourceMappingURL=App.css.map */

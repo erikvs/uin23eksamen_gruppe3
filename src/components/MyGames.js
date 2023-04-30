@@ -14,7 +14,7 @@ function MyGames() {
   }, []);
 
   return (
-    <div>
+    <div className='GameInfo'>
       <h1>My Games</h1>
       {games.map(game => <GameCard key={game.id} game={game} />)}
     </div>
