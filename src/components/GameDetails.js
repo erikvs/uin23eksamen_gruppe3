@@ -19,17 +19,19 @@ function GameDetails() {
   //TODO: Maybe make this a card? - there is also a bunch of more information to get out of the API, but idk if we want all that.
   return (
     <>
-      <article>
+      <div className='FrontpageMygames'>
+      <article className='GameDetail'>
       <h1>{game.name}</h1>
       <img src={game.background_image} alt={game.name} />
       <p>{game.description_raw}</p>
-      <p>{game.metacritic}</p>
-      <p>{game.released}</p>
-      <p>{game.website}</p>
-      <p>{game.rating}</p>
-      <p>{game.playtime}</p>
-      <p>{game.updated}</p>
+      <p>metacritic score: {game.metacritic}</p>
+      <p>Released: {game.released}</p>
+      <a href={game.website}>{game.website}</a>
+      <p>{game.rating}/5</p>
+      <p>Hours played: {game.playtime}</p>
+      <p>Last updated: {game.updated}</p>
       </article>
+      </div>
     </>
   );
 }

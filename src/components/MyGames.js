@@ -14,9 +14,11 @@ function MyGames() {
   }, []);
 
   return (
-    <div className='GameInfo'>
+    <div className='FrontpageMygames'>
+      <section className='MygamesGames'>
       <h1>My Games</h1>
       {games.map(game => <GameCard key={game.id} game={game} />)}
+      </section>
     </div>
   );
 }
