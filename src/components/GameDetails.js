@@ -22,14 +22,16 @@ function GameDetails() {
       <div className='FrontpageMygames'>
       <article className='GameDetail'>
       <h1>{game.name}</h1>
+      <div className='ImgCont'>
       <img src={game.background_image} alt={game.name} />
-      <p>{game.description_raw}</p>
-      <p>metacritic score: {game.metacritic}</p>
+      <p className='AboutGame'>{game.description_raw}</p>
+      </div>
+      <p>Metacritic score: {game.metacritic}</p>
       <p>Released: {game.released}</p>
-      <a href={game.website}>{game.website}</a>
       <p>{game.rating}/5</p>
       <p>Hours played: {game.playtime}</p>
       <p>Last updated: {game.updated}</p>
+      <a href={game.website}>Game website</a>
       </article>
       </div>
     </>
