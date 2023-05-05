@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import GameCard from './GameCard'
+import ShopCard from './ShopCard';
 
 function Dashboard() {
 
@@ -23,6 +24,11 @@ function Dashboard() {
       <Link to="/my-games"><button>Go to My Games</button></Link>
       </section>
       
+      <section className='MygamesGames'>
+        <h2>Game Shop</h2>
+      {games.map(game => <ShopCard key={game.id} game={game} />)}
+      <Link to="/GameShop"><button>Go to Game Shop</button></Link>
+      </section>
     </div>
   );
 }

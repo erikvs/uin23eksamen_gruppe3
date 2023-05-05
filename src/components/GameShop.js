@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import GameCard from './GameCard'
+import ShopCard from './ShopCard';
 
 
 function GameShop() {
@@ -18,7 +19,7 @@ function GameShop() {
       <section className='MygamesGames'>
       <h1>Game Shop</h1>
       <h3>Newest released games</h3>
-      {games.map(game => <GameCard key={game.id} game={game} />)}
+      {games.map(game => <ShopCard key={game.id} game={game} />)}
       </section>
     </div>
   );
