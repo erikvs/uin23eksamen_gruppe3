@@ -14,6 +14,9 @@ export default function Nav() {
         <li>
           <Link to="/favorites">Favorites</Link>
         </li>
+        <li>
+        <Link to="/GameShop">Game Shop</Link>
+        </li>
       </ul>
     </nav>
   );
