@@ -202,6 +202,11 @@ body{
   grid-column-start: 2;
   grid-column-end: 2;
 
+  img{
+    max-width: 100%;
+    max-height: 821px;
+    border: solid 15px #333;
+  }
 
   p{
     font-size: 20px;
@@ -213,7 +218,7 @@ body{
           color: #fff;
           padding: 16px 32px;
           font-size: 20px;
-          margin: 4px 2px;
+          margin: 10rem 2px;
           transition: 0.5s;
           font-weight: bold;
           border-radius: 15px;
@@ -231,18 +236,13 @@ body{
   
 
   .ImgCont{
-    position: relative;
-    max-width: 1459.55px;
-    border: #222 solid 1rem;
-    border-bottom: none;
-
+    float: right;
+    max-width: 50%;
+    padding-bottom: 2rem;
 
   }
 
-  img{
-    max-width: 100%;
-    max-height: 821px;
-  }
+  
 
   .AboutGame{
     background-color: rgba(0,0,0, 0.7);
@@ -251,7 +251,6 @@ body{
     font-weight: 100;
     text-align: left;
     word-wrap: break-word;
-    position: absolute;
     bottom: -2.4%;
     left: 0%;
     right: 0%;

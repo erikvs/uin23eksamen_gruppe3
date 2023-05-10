@@ -22,8 +22,8 @@ function GameDetails() {
       <div className='FrontpageMygames'>
       <article className='GameDetail'>
       <h1>{game.name}</h1>
-      <div className='ImgCont'>
       <img src={game.background_image} alt={game.name} />
+      <div className='ImgCont'>
       <p className='AboutGame'>{game.description_raw}</p>
       </div>
       <p>Metacritic score: {game.metacritic}</p>
