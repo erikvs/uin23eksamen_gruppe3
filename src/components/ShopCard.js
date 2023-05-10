@@ -10,7 +10,7 @@ function ShopCard ({ game }) {
 </Link>
 <h3>{game.name}</h3>
 <p>{game.genres.map(genre => genre.name).join(', ')}</p>
-<button href={game.store}>Buy</button>
+<button href={game.website}>Buy</button>
 </article>
 </div>
 );
