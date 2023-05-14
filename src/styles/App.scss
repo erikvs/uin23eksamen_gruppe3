@@ -258,3 +258,28 @@ body{
     color: white;
   }
 }
+
+footer{
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+
+    p{
+      font-size: 20px;
+      font-weight: bold;
+
+        a{ 
+          font-size: 25px;
+          padding: 10px; 
+          transition: 0.3s;
+
+          
+
+          }
+          
+          a:hover{
+            color: #fff;
+            
+          }
+    }
+}

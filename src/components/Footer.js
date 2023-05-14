@@ -4,7 +4,7 @@ function Footer() {
 
     return (
    <footer> 
-    <p>This project made possible by using https://rawg.io/apidocs</p>
+    <p>This project made possible by using: <a href='https://rawg.io/apidocs' >https://rawg.io/apidocs</a> </p>
    </footer>
   );
   }
