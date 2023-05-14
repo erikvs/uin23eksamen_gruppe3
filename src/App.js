@@ -7,6 +7,7 @@ import Nav from './components/Nav';
 import GameDetails from './components/GameDetails';
 import GameShop from './components/GameShop'
 import './styles/App.css';
+import Footer from './components/Footer';
 
 export default function App() {
 
@@ -20,15 +21,8 @@ export default function App() {
       <Route path="game/:slug" element={<GameDetails />} />
       <Route path="GameShop" element={<GameShop />} />
     </Routes>
-    
-
-    
-    
-      
-      
-    
+  <Footer/>     
     </>  
 
   );
-
 }
