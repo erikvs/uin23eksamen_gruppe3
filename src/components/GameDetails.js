@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import placeHolderImage from "../resources/placeHolderImage.avif"
 
 function GameDetails() {
   const  { slug } = useParams();
@@ -16,13 +17,15 @@ function GameDetails() {
     return <div>Loading...</div>;
   }
 
-  //TODO: Maybe make this a card? - there is also a bunch of more information to get out of the API, but idk if we want all that.
+  //TODO: consider reworking details into a details card?
   return (
     <>
       <div className='FrontpageMygames'>
       <article className='GameDetail'>
       <h1>{game.name}</h1>
-      <img src={game.background_image} alt={game.name} />
+      <img src={game.background_image} alt={game.name} onError={(e) => {
+          e.target.src = placeHolderImage; 
+        }}/>
       <div className='ImgCont'>
       <p className='AboutGame'>{game.description_raw}</p>
       </div>
