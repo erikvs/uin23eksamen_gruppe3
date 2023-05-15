@@ -76,6 +76,7 @@ body{
         justify-items: center;
         align-items: center;
         
+        
 
         div{
           display: inline-block;
@@ -166,6 +167,15 @@ body{
           font-size: 17px;
           }
       }}
+      .MygamesGames{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 850px;
+      }
+
+
 
 }
 
@@ -264,7 +274,7 @@ footer{
   color: #fff;
   padding: 20px;
   width: 100%;
-  position: fixed;
+  
    left: 0;
    bottom: 0;
 

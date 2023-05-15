@@ -125,6 +125,13 @@ body h1 {
   color: #333;
   font-size: 17px;
 }
+.FrontpageMygames .MygamesGames {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 850px;
+}
 
 .GameInfo {
   display: grid;
@@ -204,7 +211,6 @@ footer {
   color: #fff;
   padding: 20px;
   width: 100%;
-  position: fixed;
   left: 0;
   bottom: 0;
 }
