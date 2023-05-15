@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import GameCard from './GameCard'
 import ShopCard from './ShopCard';
 
-function Dashboard() {
+function Dashboard({favorites}) {
 
   const [myGames, setMyGames] = useState([]);
   const [shopGames, setShopGames] = useState([]);
@@ -36,6 +36,12 @@ function Dashboard() {
         <h2>Game Shop</h2>
       {shopGames.map(game => <ShopCard key={game.id} game={game} />)}
       <Link to="/GameShop"><button>Go to Game Shop</button></Link>
+      </section>
+
+      <section className='MygamesGames'>
+      <h2>My Favorites</h2>
+      {favorites && favorites.slice(0,2).map(game => <GameCard key={game.id} game={game} />)}
+      <Link to="/Favorites"><button>Go to Favorites</button></Link>
       </section>
     </div>
   );

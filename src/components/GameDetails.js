@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import placeHolderImage from "../resources/placeHolderImage.avif"
 
-function GameDetails() {
+function GameDetails({ favorites, setFavorites }) {
   const  { slug } = useParams();
   const  [game, setGame] = useState(null);
 
@@ -12,6 +12,11 @@ function GameDetails() {
       .then(data => setGame(data))
       .catch(error => console.log(error));
   }, [slug]);
+
+  const handleAddToFavorites = () => {
+    if (!favorites.some((favorite) => favorite.id === game.id)) {
+      setFavorites([...favorites, game]);
+  }};
 
   if (!game) {
     return <div>Loading...</div>;
@@ -35,6 +40,7 @@ function GameDetails() {
       <p>Hours played: {game.playtime}</p>
       <p>Last updated: {game.updated}</p>
       <a href={game.website}>Game website</a>
+      <button onClick={handleAddToFavorites}>Add to Favorites</button>
       </article>
       </div>
     </>
