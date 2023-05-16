@@ -1,4 +1,4 @@
-import React, { useState, useEffect }  from 'react';
+import React, { useState }  from 'react';
 import { Route, Routes } from "react-router-dom";
 import Dashboard from './components/Dashboard';
 import MyGames from './components/MyGames';
@@ -27,3 +27,5 @@ export default function App() {
 
   );
 }
+
+// Routes implementation heavily inspired by https://www.w3schools.com/react/react_router.asp

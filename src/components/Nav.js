@@ -21,3 +21,5 @@ export default function Nav() {
     </nav>
   );
 }
+
+// This implementation heavily inspired by https://www.w3schools.com/react/react_router.asp
