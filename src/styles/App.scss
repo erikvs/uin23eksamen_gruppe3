@@ -168,14 +168,6 @@ body{
           font-size: 17px;
           }
       }}
-      .MygamesGamesFav{
-        grid-column-start: 2;
-        grid-column-end: 2;
-        justify-items: center;
-        align-items: center;
-        margin-bottom: 900px;
-      }
-
 
 
 }
@@ -224,12 +216,14 @@ body{
     font-weight: bold;
   }
 
+  
+
   button{
           background-color: #333;
           color: #fff;
           padding: 16px 32px;
           font-size: 20px;
-          margin: 10rem 2px;
+          margin: 5rem 2px;
           transition: 0.5s;
           font-weight: bold;
           border-radius: 15px;

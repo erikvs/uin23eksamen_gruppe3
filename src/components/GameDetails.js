@@ -45,7 +45,7 @@ function GameDetails({ favorites, setFavorites }) {
       <p>{game.rating}/5</p>
       <p>Hours played: {game.playtime}</p>
       <p>Last updated: {game.updated}</p>
-      <a href={game.website}>Game website</a>
+      <a href={game.website}><button>Game website</button></a>
       <button onClick={handleAddToFavorites}>Add to Favorites</button>
       </article>
       </div>
