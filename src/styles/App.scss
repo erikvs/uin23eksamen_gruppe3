@@ -167,12 +167,12 @@ body{
           font-size: 17px;
           }
       }}
-      .MygamesGames{
+      .MygamesGamesFav{
         grid-column-start: 2;
         grid-column-end: 2;
         justify-items: center;
         align-items: center;
-        margin-bottom: 850px;
+        margin-bottom: 900px;
       }
 
 
@@ -223,7 +223,7 @@ body{
     font-weight: bold;
   }
 
-  a{
+  button{
           background-color: #333;
           color: #fff;
           padding: 16px 32px;
@@ -237,7 +237,7 @@ body{
           margin-bottom: 5rem;
           
 }
-          a:hover{
+          button:hover{
             background-color: #fff;
             color: #333; 
             font-size: 25px;

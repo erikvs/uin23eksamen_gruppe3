@@ -125,12 +125,12 @@ body h1 {
   color: #333;
   font-size: 17px;
 }
-.FrontpageMygames .MygamesGames {
+.FrontpageMygames .MygamesGamesFav {
   grid-column-start: 2;
   grid-column-end: 2;
   justify-items: center;
   align-items: center;
-  margin-bottom: 850px;
+  margin-bottom: 900px;
 }
 
 .GameInfo {
@@ -169,7 +169,7 @@ body h1 {
   font-size: 20px;
   font-weight: bold;
 }
-.GameDetail a {
+.GameDetail button {
   background-color: #333;
   color: #fff;
   padding: 16px 32px;
@@ -182,7 +182,7 @@ body h1 {
   float: left;
   margin-bottom: 5rem;
 }
-.GameDetail a:hover {
+.GameDetail button:hover {
   background-color: #fff;
   color: #333;
   font-size: 25px;
