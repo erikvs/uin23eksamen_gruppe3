@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Nav() {
@@ -21,3 +20,5 @@ export default function Nav() {
     </nav>
   );
 }
+
+// This implementation heavily inspired by https://www.w3schools.com/react/react_router.asp

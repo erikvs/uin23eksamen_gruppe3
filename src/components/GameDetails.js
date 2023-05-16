@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import placeHolderImage from "../resources/placeHolderImage.avif"
 
@@ -7,10 +7,17 @@ function GameDetails({ favorites, setFavorites }) {
   const  [game, setGame] = useState(null);
 
   useEffect(() => {
-    fetch(`https://api.rawg.io/api/games/${slug}?key=58f53988e4e5435abcf085d18cffb058`)
-      .then(response => response.json())
-      .then(data => setGame(data))
-      .catch(error => console.log(error));
+    const fetchGame = async () => {
+      try {
+        const response = await fetch(`https://api.rawg.io/api/games/${slug}?key=58f53988e4e5435abcf085d18cffb058`);
+        const data = await response.json();
+        setGame(data);
+      } 
+      catch (error) {
+        console.log(error);
+      }
+    };
+    fetchGame();
   }, [slug]);
 
   const handleAddToFavorites = () => {
@@ -22,13 +29,12 @@ function GameDetails({ favorites, setFavorites }) {
     return <div>Loading...</div>;
   }
 
-  //TODO: consider reworking details into a details card?
   return (
     <>
       <div className='FrontpageMygames'>
       <article className='GameDetail'>
       <h1>{game.name}</h1>
-      <img src={game.background_image} alt={game.name} onError={(e) => {
+      <img src={game.background_image} alt={game.background_image_additional} onError={(e) => {
           e.target.src = placeHolderImage; 
         }}/>
       <div className='ImgCont'>
@@ -39,7 +45,7 @@ function GameDetails({ favorites, setFavorites }) {
       <p>{game.rating}/5</p>
       <p>Hours played: {game.playtime}</p>
       <p>Last updated: {game.updated}</p>
-      <button href={game.website}>Game website</button>
+      <a href={game.website}>Game website</a>
       <button onClick={handleAddToFavorites}>Add to Favorites</button>
       </article>
       </div>
