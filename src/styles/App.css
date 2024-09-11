@@ -1,6 +1,10 @@
+nav {
+  position: sticky;
+}
 nav ul {
   list-style-type: none;
-  margin: 0 0rem 2rem 0rem;
+  margin: 0;
+  margin-left: auto;
   padding: 2rem;
   overflow: hidden;
   background-color: #333;
@@ -31,6 +35,7 @@ body {
   background: rgb(74, 74, 102);
   background: linear-gradient(90deg, rgb(74, 74, 102) 26%, rgb(33, 76, 84) 57%, rgb(68, 68, 68) 96%);
   color: #fff;
+  margin: 0 0 0 0;
 }
 body h1 {
   font-size: 3rem;
