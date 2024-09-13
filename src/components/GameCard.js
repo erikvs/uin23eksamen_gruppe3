@@ -12,6 +12,9 @@ function GameCard ({ game }) {
 </Link>
 <h3>{game.name}</h3>
 <p>{game.genres.map(genre => genre.name).join(', ')}</p>
+<Link to={`/game/${game.slug}`}>
+<button>visit</button>
+</Link>
 </article>
 </div>
   );
