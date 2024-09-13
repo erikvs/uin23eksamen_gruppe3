@@ -43,7 +43,7 @@ body h1 {
 
 .FrontpageMygames {
   display: grid;
-  grid-template-columns: 10% 80% 10%;
+  grid-template-columns: 20% 60% 20%;
   padding: 10px;
 }
 .FrontpageMygames h1 {
@@ -160,7 +160,7 @@ body h1 {
   grid-column-end: 2;
 }
 .GameDetail img {
-  max-width: 100%;
+  max-width: 1484px;
   max-height: 821px;
   border: solid 15px #333;
 }
