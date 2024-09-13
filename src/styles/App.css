@@ -187,22 +187,24 @@ body h1 {
   font-size: 25px;
 }
 .GameDetail .ImgCont {
-  float: right;
   max-width: 50%;
   padding-bottom: 2rem;
+  max-width: 500px;
+}
+.GameDetail .gameCont {
+  background-color: #333;
+  border: solid #222 3px;
+  max-width: 1484px;
 }
 .GameDetail .AboutGame {
-  background-color: rgba(0, 0, 0, 0.7);
+  position: relative;
   padding: 1%;
   font-size: 20px;
   font-weight: 100;
   text-align: left;
   word-wrap: break-word;
-  bottom: -2.4%;
-  left: 0%;
-  right: 0%;
   max-width: 1459.55px;
-  color: white;
+  color: #b5b5b5;
 }
 
 footer {
@@ -210,6 +212,7 @@ footer {
   color: #fff;
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-left: 2rem;
   width: 100%;
   left: 0;
   bottom: 0;

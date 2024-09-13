@@ -23,7 +23,9 @@ function GameDetails({ favorites, setFavorites }) {
   const handleAddToFavorites = () => {
     if (!favorites.some((favorite) => favorite.id === game.id)) {
       setFavorites([...favorites, game]);
-  }};
+  }
+    alert("Game added to favorites")
+};
 
   if (!game) {
     return <div>Loading...</div>;
@@ -37,16 +39,19 @@ function GameDetails({ favorites, setFavorites }) {
       <img src={game.background_image} alt={game.background_image_additional} onError={(e) => {
           e.target.src = placeHolderImage; 
         }}/>
+        <div className='gameCont'>
+        <p>Metacritic score: {game.metacritic}</p>
+        <p>Released: {game.released}</p>
+        <p>{game.rating}/5</p>
+        <p>Hours played: {game.playtime}</p>
+        <p>Last updated: {game.updated}</p>
+        <a href={game.website}><button>Game website</button></a>
+        <button onClick={handleAddToFavorites}>Add to Favorites</button>
+      </div>
       <div className='ImgCont'>
+        <h2>About the game</h2>
       <p className='AboutGame'>{game.description_raw}</p>
       </div>
-      <p>Metacritic score: {game.metacritic}</p>
-      <p>Released: {game.released}</p>
-      <p>{game.rating}/5</p>
-      <p>Hours played: {game.playtime}</p>
-      <p>Last updated: {game.updated}</p>
-      <a href={game.website}><button>Game website</button></a>
-      <button onClick={handleAddToFavorites}>Add to Favorites</button>
       </article>
       </div>
     </>
