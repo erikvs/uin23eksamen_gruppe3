@@ -159,11 +159,6 @@ body h1 {
   grid-column-start: 2;
   grid-column-end: 2;
 }
-.GameDetail img {
-  max-width: 1484px;
-  max-height: 821px;
-  border: solid 15px #333;
-}
 .GameDetail p {
   font-size: 20px;
   font-weight: bold;
@@ -195,6 +190,17 @@ body h1 {
   background-color: #333;
   border: solid #222 3px;
   max-width: 1484px;
+}
+.GameDetail .gameCont img {
+  max-width: 1484px;
+  max-height: 821px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.GameDetail .gameCont p {
+  padding-left: 1rem;
 }
 .GameDetail .AboutGame {
   position: relative;

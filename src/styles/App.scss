@@ -213,11 +213,7 @@ body{
   grid-column-end: 2;
 
 
-  img{
-    max-width: 1484px;
-    max-height: 821px;
-    border: solid 15px #333;
-  }
+   
 
   p{
     font-size: 20px;
@@ -261,7 +257,16 @@ body{
     border: solid #222 3px;
     max-width: 1484px;
     
-
+        img{
+    max-width: 1484px;
+    max-height: 821px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    }
+          p{
+            padding-left: 1rem;
+          }
   }
 
   .AboutGame{

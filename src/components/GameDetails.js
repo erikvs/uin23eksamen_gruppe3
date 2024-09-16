@@ -36,10 +36,10 @@ function GameDetails({ favorites, setFavorites }) {
       <div className='FrontpageMygames'>
       <article className='GameDetail'>
       <h1>{game.name}</h1>
+      <div className='gameCont'>
       <img src={game.background_image} alt={game.background_image_additional} onError={(e) => {
           e.target.src = placeHolderImage; 
         }}/>
-        <div className='gameCont'>
         <p>Metacritic score: {game.metacritic}</p>
         <p>Released: {game.released}</p>
         <p>{game.rating}/5</p>
