@@ -27,7 +27,6 @@ nav ul a {
 nav ul li a:hover {
   color: #fff;
   font-weight: bolder;
-  border: #333 solid 10px;
   text-shadow: #b5b5b5 1px 0 10px;
   box-shadow: #b5b5b5 1px 0 20px;
 }
@@ -182,7 +181,6 @@ body h1 {
 .GameDetail button:hover {
   background-color: #fff;
   color: #333;
-  font-size: 25px;
 }
 .GameDetail .ImgCont {
   max-width: 50%;
